@@ -53,7 +53,7 @@ function baslat() {
                 document.getElementById("sonuc").innerHTML = "Salata 🥗"
             }
             if (z == 15) {
-                document.getElementById("sonuc").innerHTML = "Patates kızartması🍟"
+                document.getElementById("sonuc").innerHTML = "Brokoli 🥦"
             }
 
             if (z == 16) {
