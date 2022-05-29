@@ -1,0 +1,85 @@
+    body {
+        margin: 0;
+        padding: 0;
+        top: 0;
+        background: #000;
+    }
+    
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .bubbles {
+        position: relative;
+        display: flex;
+    }
+    
+    .bubbles span {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: red;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px red, 0 0 100px red;
+        animation: animate 15s linear infinite;
+        animation-duration: calc(125s/var(--i));
+    }
+    
+    @keyframes animate {
+        0% {
+            transform: translateY(100vh) scale(0);
+        }
+        100% {
+            transform: translateY(-10vh) scale(1);
+        }
+    }
+    
+    .bubbles span:nth-child(even) {
+        background: orange;
+        box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px orange, 0 0 100px orange;
+    }
+    
+    #baslat {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        z-index: 1;
+        color: orange;
+        background: red;
+        border: 1px solid wheat;
+    }
+    
+    #durdur {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        z-index: 1;
+        color: red;
+        background: orange;
+        border: 1px solid wheat;
+    }
+    
+    #sonuc {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        width: 500px;
+        height: 80px;
+        box-shadow: 3px 5px pink;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        background-color: purple;
+        color: white;
+        z-index: 1;
+    }
